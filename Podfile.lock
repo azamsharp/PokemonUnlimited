@@ -1,0 +1,21 @@
+PODS:
+  - HDAugmentedReality (1.1.2)
+
+DEPENDENCIES:
+  - HDAugmentedReality (from `https://github.com/DanijelHuis/HDAugmentedReality.git`)
+
+EXTERNAL SOURCES:
+  HDAugmentedReality:
+    :git: https://github.com/DanijelHuis/HDAugmentedReality.git
+
+CHECKOUT OPTIONS:
+  HDAugmentedReality:
+    :commit: 5edbdb0e4102bfa084371922f0d645c1b6afa7a5
+    :git: https://github.com/DanijelHuis/HDAugmentedReality.git
+
+SPEC CHECKSUMS:
+  HDAugmentedReality: 7e44eba603d3ff71bd3d7698bcf1bd7e66b98a1d
+
+PODFILE CHECKSUM: cdc4ef905155709a81ba1fcf0cc1e0539fb56026
+
+COCOAPODS: 1.0.0
