@@ -73,7 +73,9 @@ class PokemonViewController : UIViewController, UICollectionViewDelegate,UIColle
         self.locationManager.distanceFilter = kCLDistanceFilterNone
         self.locationManager.requestAlwaysAuthorization()
         
-        populatePokemons()
+        
+        populatePokemonsUsingFile()
+       // populatePokemons()
         
     }
     
