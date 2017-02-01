@@ -4,9 +4,9 @@ I created this iOS Augmented Reality app for my kids since they love to capture 
 
 ### Screenshots
 
-![alt text](http://www.highoncoding.com/publicfolder/pu-1.png "Pokemon Unlimited")
+![alt text](http://www.highoncoding.com/publicfolder/p1.png "Pokemon Unlimited")
 
-![alt text](http://www.highoncoding.com/publicfolder/pu-2.png "Pokemon Unlimited")
+![alt text](http://www.highoncoding.com/publicfolder/p2.png "Pokemon Unlimited")
 
 ### Video 
 
