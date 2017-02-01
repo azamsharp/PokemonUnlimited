@@ -12,4 +12,6 @@ I created this iOS Augmented Reality app for my kids since they love to capture 
 
 [Pokemon Unlimited Video Link](https://www.youtube.com/watch?v=Go6lNbcKLnM)
 
+### Credits 
 
+[HDAugmentedReality](https://github.com/DanijelHuis/HDAugmentedReality)
