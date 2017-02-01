@@ -100,9 +100,38 @@ class PokemonViewController : UIViewController, UICollectionViewDelegate,UIColle
     
     }
     
+    
+    private func populatePokemonsUsingFile() {
+        
+        guard let path = Bundle.main.path(forResource: "pokemons", ofType: "json") else {
+            fatalError("Requested path does not exist")
+        }
+        
+        let data = NSData(contentsOfFile: path)
+        
+        let dictionaries = try! JSONSerialization.jsonObject(with: (data! as? Data)!, options: []) as! [[String:Any]]
+        
+        self.pokemons = dictionaries.flatMap(Pokemon.init)
+        
+        for pokemon in self.pokemons {
+            
+            // create pokemon annotation
+            let pokemonAnnotation = PokemonAnnotation()
+            pokemonAnnotation.title = pokemon.name
+            pokemonAnnotation.location = CLLocation(latitude: pokemon.latitude, longitude: pokemon.longitude)
+            pokemonAnnotation.imageURL = pokemon.imageURL
+            pokemonAnnotation.pokemon = pokemon
+            
+            
+            self.pokemonAnnotations.append(pokemonAnnotation)
+        }
+        
+    }
+    
+    
     private func populatePokemons() {
         
-        let url = "https://still-wave-26435.herokuapp.com/pokemon/all"
+        let url = "http://highoncoding.com/publicfolder/pokemons.json"
         let pokemonURL = URL(string: url)
         
         URLSession.shared.dataTask(with: pokemonURL!) { (data, _, _) in
